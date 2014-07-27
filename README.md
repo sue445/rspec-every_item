@@ -2,6 +2,8 @@
 
 Evaluate matcher in each array element
 
+This is inspired by Junit [everyItem](http://junit.sourceforge.net/javadoc/org/junit/matchers/JUnitMatchers.html#everyItem(org.hamcrest.Matcher))
+
 ## Installation
 
 Add this line to your application's Gemfile:
