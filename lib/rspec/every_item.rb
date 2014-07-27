@@ -1,5 +1,5 @@
 require "rspec/every_item/version"
-require "rspec/every_item/method_syntax"
+require "rspec/every_item/matchers"
 
 module RSpec
   module EveryItem

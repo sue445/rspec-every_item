@@ -1,6 +1,6 @@
 module RSpec
   module EveryItem
-    module MethodSyntax
+    module Matchers
       RSpec::Matchers.define :every_item do |expected_matcher|
         match do |actual_array|
           actual_array.each do |actual|

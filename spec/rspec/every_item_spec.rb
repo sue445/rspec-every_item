@@ -1,7 +1,5 @@
 describe RSpec::EveryItem do
   describe "#every_item" do
-    include RSpec::EveryItem::MethodSyntax
-
     context "When build-in matcher" do
       describe "to every_item" do
         let(:names) do

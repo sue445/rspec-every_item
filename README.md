@@ -23,10 +23,6 @@ Or install it yourself as:
 ```ruby
 require "rspec/every_item"
 
-RSpec.configure do |config|
-  config.include RSpec::EveryItem::MethodSyntax
-end
-
 describe "All elements" do
   it "should start with 'cure_'" do
     names = %w(
