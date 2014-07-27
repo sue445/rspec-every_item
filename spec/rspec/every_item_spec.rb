@@ -29,5 +29,25 @@ describe RSpec::EveryItem do
         it { expect(names).not_to every_item( start_with("cure_") ) }
       end
     end
+
+    context "When custom matcher" do
+      RSpec::Matchers.define :even_number do
+        match do |actual|
+          actual % 2 == 0
+        end
+      end
+
+      describe "to every_item" do
+        let(:numbers) { [0, 2, 4, 6, 8] }
+
+        it { expect(numbers).to every_item( even_number ) }
+      end
+
+      context "not_to every_item" do
+        let(:numbers) { [0, 2, 4, 6, 7, 8] }
+
+        it { expect(numbers).not_to every_item( even_number ) }
+      end
+    end
   end
 end
