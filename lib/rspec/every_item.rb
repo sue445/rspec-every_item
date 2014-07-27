@@ -1,7 +1,7 @@
 require "rspec/every_item/version"
 require "rspec/every_item/method_syntax"
 
-module Rspec
+module RSpec
   module EveryItem
     # Your code goes here...
   end

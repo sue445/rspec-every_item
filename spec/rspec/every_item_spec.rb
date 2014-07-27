@@ -1,6 +1,6 @@
-describe Rspec::EveryItem do
+describe RSpec::EveryItem do
   describe "#every_item" do
-    include Rspec::EveryItem::MethodSyntax
+    include RSpec::EveryItem::MethodSyntax
 
     context "When build-in matcher" do
       describe "to every_item" do

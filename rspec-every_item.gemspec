@@ -5,7 +5,7 @@ require 'rspec/every_item/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rspec-every_item"
-  spec.version       = Rspec::EveryItem::VERSION
+  spec.version       = RSpec::EveryItem::VERSION
   spec.authors       = ["sue445"]
   spec.email         = ["sue445@sue445.net"]
   spec.summary       = %q{TODO: Write a short summary. Required.}

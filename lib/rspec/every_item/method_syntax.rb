@@ -1,4 +1,4 @@
-module Rspec
+module RSpec
   module EveryItem
     module MethodSyntax
       RSpec::Matchers.define :every_item do |expected_matcher|
