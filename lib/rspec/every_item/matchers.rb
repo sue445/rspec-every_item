@@ -2,11 +2,8 @@ module RSpec
   module EveryItem
     module Matchers
       RSpec::Matchers.define :every_item do |expected_matcher|
-        match do |actual_array|
-          actual_array.each do |actual|
-            return false unless expected_matcher.matches?(actual)
-          end
-          true
+        match do |actuals|
+          actuals.all?{|actual| expected_matcher.matches?(actual) }
         end
       end
     end
