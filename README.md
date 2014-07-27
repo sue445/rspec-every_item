@@ -6,6 +6,11 @@ This is inspired by Junit [everyItem](http://junit.sourceforge.net/javadoc/org/j
 
 [![Build Status](https://travis-ci.org/sue445/rspec-every_item.svg)](https://travis-ci.org/sue445/rspec-every_item)
 
+## Requirements
+
+* ruby 1.9.3, 2.x
+* rspec 2.x, 3.0.0
+
 ## Installation
 
 Add this line to your application's Gemfile:
