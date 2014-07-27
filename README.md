@@ -1,6 +1,6 @@
-# Rspec::EveryItem
+# RSpec::EveryItem
 
-TODO: Write a gem description
+Evaluate matcher in each array element
 
 ## Installation
 
@@ -20,11 +20,32 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require "rspec/every_item"
+
+RSpec.configure do |config|
+  config.include RSpec::EveryItem::MethodSyntax
+end
+
+describe "All elements" do
+  it "should start with 'cure_'" do
+    names = %w(
+      cure_happy
+      cure_sunny
+      cure_peace
+      cure_march
+      cure_beauty
+    )
+
+    expect(names).to every_item( start_with("cure_") )
+  end
+end
+```
+
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/rspec-every_item/fork )
+1. Fork it ( https://github.com/sue445/rspec-every_item/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
