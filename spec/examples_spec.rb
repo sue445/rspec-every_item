@@ -27,12 +27,16 @@ describe "Example 2" do
 
   subject{ precure_names }
 
-  context "Not Using rspec-every_item" do
-    its([0]){ should start_with "cure_" }
-    its([1]){ should start_with "cure_" }
-    its([2]){ should start_with "cure_" }
-    its([3]){ should start_with "cure_" }
-    its([4]){ should start_with "cure_" }
+  if RSpec::Core::Version::STRING.to_f < 3
+    # test only rspec2.gemfile @travis
+    # because rspec 2.1.x and rspec-its are conflict
+    context "Not Using rspec-every_item" do
+      its([0]){ should start_with "cure_" }
+      its([1]){ should start_with "cure_" }
+      its([2]){ should start_with "cure_" }
+      its([3]){ should start_with "cure_" }
+      its([4]){ should start_with "cure_" }
+    end
   end
 
   context "Using rspec-every_item" do
