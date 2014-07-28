@@ -23,6 +23,7 @@ Coveralls.wear!
 
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require "rspec/every_item"
+require "rspec/its"
 
 RSpec.configure do |config|
 # The settings below are suggested to provide a good initial experience

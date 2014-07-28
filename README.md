@@ -51,6 +51,8 @@ describe "All elements" do
 end
 ```
 
+## More examples
+https://github.com/sue445/rspec-every_item/blob/master/spec/examples_spec.rb
 
 ## Contributing
 
