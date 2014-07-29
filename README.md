@@ -10,6 +10,11 @@ This is inspired by Junit [everyItem](http://junit.sourceforge.net/javadoc/org/j
 [![Coverage Status](https://img.shields.io/coveralls/sue445/rspec-every_item.svg)](https://coveralls.io/r/sue445/rspec-every_item)
 [![Dependency Status](https://gemnasium.com/sue445/rspec-every_item.svg)](https://gemnasium.com/sue445/rspec-every_item)
 
+## Attention
+**When RSpec 3.x, recommend `all` matcher.**
+
+https://relishapp.com/rspec/rspec-expectations/v/3-0/docs/built-in-matchers/all-matcher
+
 ## Requirements
 
 * ruby 1.9.3, 2.x
